@@ -4,36 +4,21 @@ using Microsoft.Xna.Framework.Graphics;
 namespace TerraCore.Game.Elements
 {
     /// <summary>
-    /// Text element
+    /// Sprite element
     /// </summary>
-    public class TextElement : GuiElement
+    public class SpriteElement : GuiElement
     {
         /// <summary>
         /// Text content
         /// </summary>
-        private readonly string _text;
-        
-        /// <summary>
-        /// Text font
-        /// </summary>
-        private readonly SpriteFont _font;
-
-        /// <summary>
-        /// Text color
-        /// </summary>
-        private readonly Color _color;
+        private readonly Texture2D _sprite;
 
         /// <summary>
         /// Create new TextElement
         /// </summary>
-        /// <param name="text">Text content</param>
-        /// <param name="font">Text font</param>
-        /// <param name="color">Text color</param>
-        public TextElement(string text, SpriteFont font, Color color)
+        public SpriteElement(Texture2D sprite)
         {
-            _text = text;
-            _font = font;
-            _color = color;
+            _sprite = sprite;
         }
 
         /// <summary>
@@ -41,7 +26,7 @@ namespace TerraCore.Game.Elements
         /// </summary>
         /// <param name="gameTime">GameTime</param>
         /// <param name="batch">SpriteBatch</param>
-        public override void Draw(GameTime gameTime, SpriteBatch batch) 
-            => batch.DrawString(_font, _text, Position, _color, Rotation, Vector2.One, Vector2.One, SpriteEffects.None, 0);
+        public override void Draw(GameTime gameTime, SpriteBatch batch)
+            => batch.Draw(_sprite, Position, null, Color.White, Rotation, Vector2.Zero, Vector2.One, SpriteEffects.None, 0);
     }
 }

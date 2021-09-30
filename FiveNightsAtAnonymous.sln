@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TerraCore.Game", "TerraCore.Game\TerraCore.Game.csproj", "{5EBCB923-61A0-4CC5-95C9-05378B094D26}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiveNightsAtAnonymous.Game", "FiveNightsAtAnonymous.Game\FiveNightsAtAnonymous.Game.csproj", "{5EBCB923-61A0-4CC5-95C9-05378B094D26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

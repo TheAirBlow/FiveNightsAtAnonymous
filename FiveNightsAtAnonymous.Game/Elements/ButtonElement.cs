@@ -1,7 +1,7 @@
 namespace TerraCore.Game.Elements
 {
-    public class ButtonElement
-    {
-        
-    }
+    /// <summary>
+    /// Button element (is just a raw GuiElement)
+    /// </summary>
+    public class ButtonElement : GuiElement { }
 }
